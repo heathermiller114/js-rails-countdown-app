@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 #create events (name, date)
-Event.destory_all
+Event.destroy_all
 event_list = [
     ["Alysha's 26th Birthday", "03/10/2021"],
     ["Tim's 30th Birthday", "02/28/2021"],
