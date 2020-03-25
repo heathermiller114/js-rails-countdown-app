@@ -4,6 +4,7 @@ class Api::V1::EventsController < ApplicationController
 
     def index
         @events = Event.all
+        #pry
         render json: @events
     end
 

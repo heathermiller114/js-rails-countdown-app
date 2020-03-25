@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#create events (name, date)
+Event.destory_all
+event_list = [
+    ["Alysha's 26th Birthday", "03/10/2021"],
+    ["Tim's 30th Birthday", "02/28/2021"],
+    ["Christmas", "12/25/2020"],
+    ["Graduation", "05/08/2020"],
+    ["Thanksgiving", "11/26/2020"]
+]
+
+event_list.each do |name, date|
+    Event.create(name: name, date: date)
+end
