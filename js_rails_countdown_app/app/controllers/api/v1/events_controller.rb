@@ -1,4 +1,4 @@
-class Api::Vi::EventsController < ApplicationController
+class Api::V1::EventsController < ApplicationController
 
     before_action :find_event, only: [:update]
 
