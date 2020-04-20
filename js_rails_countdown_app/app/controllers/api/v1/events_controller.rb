@@ -17,7 +17,7 @@ class Api::V1::EventsController < ApplicationController
         end
     end
 
-    def delete
+    def destroy
         @event.destroy
     end
 
