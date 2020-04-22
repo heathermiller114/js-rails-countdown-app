@@ -1,11 +1,14 @@
 class Api::V1::EventsController < ApplicationController
 
-    before_action :find_event, only: [:update, :delete]
+    before_action :find_event, only: [:update, :destroy]
 
     def index
         @events = Event.all
         #pry
         render json: @events
+    end
+
+    def create
     end
 
     def update
