@@ -11,7 +11,7 @@ class Api::V1::EventsController < ApplicationController
     def create
         # pry
         event = Event.create(:name => params[:name], :date => params[:date])
-        render json: EventSerializer.new(event).to_serialized_json
+        render json: event
     end
 
     def update
