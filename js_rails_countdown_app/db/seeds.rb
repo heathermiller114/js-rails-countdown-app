@@ -9,11 +9,11 @@
 #create events (name, date)
 Event.destroy_all
 event_list = [
-    ["Alysha's 26th Birthday", "03/10/2021"],
-    ["Tim's 30th Birthday", "02/28/2021"],
-    ["Christmas", "12/25/2020"],
-    ["Graduation", "05/08/2020"],
-    ["Thanksgiving", "11/26/2020"]
+    ["Alysha's 26th Birthday", '2021-03-10'],
+    ["Tim's 30th Birthday", '2021-02-28'],
+    ["Christmas", '2020-12-25'],
+    ["Graduation", '2020-05-10'],
+    ["Thanksgiving", '2020-11-26']
 ]
 
 event_list.each do |name, date|
