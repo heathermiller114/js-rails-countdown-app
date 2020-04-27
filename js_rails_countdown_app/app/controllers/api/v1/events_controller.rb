@@ -25,6 +25,9 @@ class Api::V1::EventsController < ApplicationController
 
     def destroy
         Event.destroy(params[:id])
+        pry
+        @events = Event.all
+        render json: @events
     end
 
 
