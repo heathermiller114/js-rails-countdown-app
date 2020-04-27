@@ -4,12 +4,10 @@ class Api::V1::EventsController < ApplicationController
 
     def index
         @events = Event.all
-        #pry
         render json: @events
     end
 
     def create
-        # pry
         event = Event.create(:name => params[:name], :date => params[:date])
         render json: event
     end
@@ -24,10 +22,7 @@ class Api::V1::EventsController < ApplicationController
     end
 
     def destroy
-        Event.destroy(params[:id])
-        pry
-        @events = Event.all
-        render json: @events
+        @event.destroy
     end
 
 
